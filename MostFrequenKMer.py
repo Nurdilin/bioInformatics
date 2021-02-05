@@ -22,13 +22,13 @@ def _FrequencyMap(Text, k):
     return freqDict
 
 def _MostFrequenKMer(Text, k):
-	kmers=[]
-	freqMapDict=_FrequencyMap(Text,k)
-	_max = max(freqMapDict.values())
-	for most_frequent_kmer in freqMapDict:   
-		if freqMapDict[most_frequent_kmer] == _max:   
-			kmers.append(most_frequent_kmer)   
-	return kmers   
+    kmers=[]
+    freqMapDict=_FrequencyMap(Text,k)
+    _max = max(freqMapDict.values())
+    for most_frequent_kmer in freqMapDict:   
+        if freqMapDict[most_frequent_kmer] == _max:   
+            kmers.append(most_frequent_kmer)
+    return kmers   
 
 #def _MostFrequenKMer(Text,k): 
 # Note to self
